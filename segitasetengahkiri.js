@@ -1,11 +1,16 @@
-function segitigasetengahkiri(baris) {
-  for (i = 1; i <= baris; i++) {
-    console.log("*");
-    for (j = i - 1; j < i; j++) {
-      console.log("*");
+function segitaSetengahKiriAtas(baris) {
+  let pola = "";
+  for (let i = 1; i <= baris; i++) {
+    for (let j = baris; j > i; j--) {
+      pola += " ";
     }
-    console.log("\n");
+    for (let k = 1; k <= i; k++) {
+      pola += "*";
+    }
+    pola += "\n";
   }
+
+  return pola;
 }
 
-segitigasetengahkiri(5);
+console.log(segitaSetengahKiriAtas(5));
