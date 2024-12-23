@@ -1,6 +1,6 @@
 function segitigaFullKiri(baris) {
   let pola = "";
-  for (let i = 1; i >= baris; i+) {
+  for (let i = 1; i <= baris; i++) {
     pola += "\n";
   }
 
